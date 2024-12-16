@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+<fieldset>
+    <h><b>TELANGANA STATE BOARD TRANSPORT CORPORATION</b></h></br>
+        <h><b>GENERAL BUS PASS APPLICATION</b></h></center>
+    </fieldset>
+    <form method="get" action="./sucess.html" autocomplete="off">
+        <fieldset>
+            <legend>Applicant Details</legend></br>
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" pattern="[a-zA-z]+" title=" should be in Alphabets" maxlength="required">
+        <div style="text-align:right;">
+        <label for="Father's/Guardians Name:">Father's/Guardians Name:</label>
+        <input type="text" id="Father's/Guardians Name" pattern="[a-zA-z]+" title=" should be in Alphabets" maxlength="required"></div></br></br>
+        <label for Date of birth>Date of birth:</label>
+        <input type="Date of birth" name="Date of birth" placeholder="dd-mm-yyyy"  pattern="[dd-mm-yyyy][0-9]"required">
+        <div style="text-align: right;">
+            <label>Gender:</label>
+            <input type="radio" name="Gender" value="female"required> female
+            <input type="radio"  name="Gender" Value="male" required>male
+        </div></br></br>
+        <label for="Age as on">Age as on:</label>
+        <input type="text" id="Age is on" name="age is one" maxlength="required">
+        <div style="text-align: right;">
+            <label for="AadharNo">Adhar No:</labelfor>
+                <input type="text" id="AadharNo" Name="Aadhar No" placeholder="XXXX XXXX XXXX" pattern=[0-9]{12} tittle="should be numbers" maxlength="12">
+        </div></br></br>
+        <label for="Watsup No">Watsup No:</label>
+        <input type="text" id="Watsup No" name="Watsup" pattern="\+91[9014][0-9]{12}" tittle="should be numbers" maxlength="10">
+        <div style="text-align: right;">
+            <label for="Email id">Email id:</label>
+            <input type="text" id="Email id" name="Email id" required>
+        </div></br></br>
+        <label>Photo:</label>
+        <input type="File" required>
+        </fieldset>
+        <fieldset>
+            <legend>Residential Address Details</legend></br>
+            <label for="Applicant Address">Applicant Address:</label>
+            <input type="text" id="Applicant Address" name="Applicant Address" maxlength="50">
+            <div style="text-align: right;">
+                <label for="districts">Districts:</label>
+                <select id="districts" name="districts">
+                    <option>select</option>
+                <option>Karminagar</option>
+                <option>Hyderabad</option>
+                <option>Warngal</option></select></div></br>
+                <label for="mandals">Mandal:</label>
+                <select id="Mandals" name="mandals">
+                    <option>select</option>
+                    <option>Karminagar</option>
+                    <option>Hyderabad</option>
+                    <option>Warngal</option>    
+                </select>
+                <div style="text-align:right">
+                    <label for="villages">village:</label>
+                    <select id="villages" name="Villages">
+                        <option>select</option>
+                        <option>Karminagar</option>
+                <option>Hyderabad</option>
+                <option>Warngal</option>
+                    </select>
+                </div>
+                <label for="Pincode">Pincode:</label>
+                <input type ="text" id="Pincode" name="pincode" pattern="[0-9]" maxlength="6">
+                </fieldset>
+                <fieldset>
+                    <legend>Pass type</legend></fieldset</br>
+                    <label for="City">City</label>
+                     <select id="city" name="city">
+                        <option>select</option>
+                        <option>Karminagar</option>
+                        <option>Hyderabad</option>
+                        <option>Warngal</option></select></br></br>
+                        <label for="Pass type">Pass type</label>
+                        <select id="Pass type">
+                            <option>select</option>
+                            <option>Metro Pass</option>
+                            <option>Ordinary pass</option>
+                            <option>Metro delux pass</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Mode of payment and pass collection</legend></br>
+            <label for ="Mode of Payment">Mode of Payment</label>
+            <select id="Mode of Payment" name="mode of payment">
+                <option>Type of payment</option>
+                <option>Online</option>
+                <option>At the Bus counter</option>
+            </select></br></br>
+            <label for ="Pass Delivery Mode">Pass delivery Mode</label>
+            <select id="Pass delivery Mode">
+                <option>Select</option>
+                <option>Warngal Bustop</option>
+                <option>Hyderabad JBS Bustop</option>
+                <option>Karminagar Bustop</option>
+                <option>Hyderabad MGBS Bustop</option>
+            </select></br></br>
+            <label for ="Center at which you want to collect pass">Center at which you want to collect pass</label>
+            <select id="Center at which you want to collect pass" name="Center at which you want to collect pass">
+                <option>Select</option>
+                <option>RTC X ROADS</option>
+                <option>KOTI</option>
+                <option>Karminagar Bustop</option>
+                <option>Warngal Bustop</option>
+            </select>
+                </fieldset></br></br>
+                <center>
+                    <img src="./image.png"></br></br>
+                    <input type="text" name="captch" pattern="dgbW34T" tiitle="enter above details"></br></br>
+                    <input type="submit" value="submit"></center>
+
+                
+        
+
+            
+
+    </form>
+</body>
+</html>
