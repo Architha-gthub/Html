@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Haven</title>
+
+  <!-- Google Fonts -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">📚 <span>Book Haven</span></div>
+    <nav class="navbar">
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" id="genres-link" class="genres-link">Genres</a>
+          <ul id="genres-list" class="genres-list">
+            <li><a href="#" class="genre-item" data-genre="Fiction">Fiction</a></li>
+            <li><a href="#" class="genre-item" data-genre="Classic">Classic</a></li>
+            <li><a href="#" class="genre-item" data-genre="Science Fiction">Science Fiction</a></li>
+            <li><a href="#" class="genre-item" data-genre="Fantasy">Fantasy</a></li>
+            <li><a href="#" class="genre-item" data-genre="Adventure">Adventure</a></li>
+            <li><a href="#" class="genre-item" data-genre="Dystopian">Dystopian</a></li>
+          </ul>
+        </li>
+        <li><a href=" ">Store</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+     
+      <div class="header-icons">
+        <a href="wishlist.html" class="icon"><i class="fas fa-heart"></i></a>
+        <a href="cart.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
+        <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+    <a href="register.html" class="btn btn-outline-primary btn-sm">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+  <section id="favorites-section" style="display: none;">
+    <h2>Your Favorites</h2>
+    <div id="favorites-container" class="book-list"></div>
+  </section>
+  
+  <section id="cart-section" style="display: none;">
+    <h2>Your Cart</h2>
+    <div id="cart-container" class="book-list"></div>
+  </section>
+  
+
+  <!-- Landing Page -->
+  <section id="landing-page" class="landing">
+    <div class="landing-content">
+      <div class="text-side">
+        <h1>Welcome to <span class="highlight">Book Haven</span> 📚</h1>
+        <p class="quote">"A reader lives a thousand lives<br> before he dies..."</p>
+        <p>"Where Every Book Begins a New Journey......"</p>
+        <ul class="features">
+          <li>📖 Explore thousands of titles</li>
+          <li>🌟 Curated picks</li>
+          <li>🛒 Easy & fast checkout</li>
+        </ul>
+        <button id="enter-btn" class="btn btn-primary">Enter Store</button>
+      </div>
+      <div class="image-side">
+        <video src="video.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://markmanson.net/wp-content/uploads/2020/05/best-books-fiction.jpg" class="d-block w-100" alt="Books">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2018/03/19/18/20/tea-time-3240766_1280.jpg" class="d-block w-100" alt="Reading">
+        </div>
+        <div class="carousel-item">
+          <img src="https://hintergrundbild.org/wallpaper/full/a/4/3/23165-vertical-buecher-wallpapers-1920x1200.jpg" class="d-block w-100" alt="Literature">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div><br><br>
+
+    <!-- About Fiction Section -->
+     <center>
+    <section class="about-fiction">
+      <div class="about-container text-only">
+        <h2>Discover the World of Fiction</h2>
+        <p>At <strong>Book Haven</strong>, we believe fiction is more than just storytelling — it's a portal to new dimensions, ideas, and emotions.</p>
+        <p>Whether you're into fantasy realms, dystopian futures, or heartwarming love stories, our curated collection has something for every reader.</p>
+      </div>
+    </section>
+     </center><br><br>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <p class="section-subtitle">TESTIMONIALS</p>
+      <h2 class="section-title">Hear From Our Book Lovers</h2>
+      <p class="section-description">Real thoughts from real readers. Discover why readers love Book Haven!</p>
+    
+      <div class="testimonial-container">
+        <!-- Testimonial Cards -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I stumbled upon Book Haven a few months ago, and now it's my go-to for all things literature. The collection is stunning!"</p>
+          <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Reader 1">
+            <div><h4>John Carter</h4><span>Avid Sci-Fi Reader</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Their classics section is unmatched! Quick delivery, beautiful covers, and great recommendations."</p>
+          <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Reader 2">
+            <div><h4>Emma Stone</h4><span>Literature Enthusiast</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"What I love is the personalized touch. I found fantasy gems I'd never heard of before — absolute magic!"</p>
+          <div class="user-info">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Reader 3">
+            <div><h4>Sophia Lee</h4><span>Fantasy Fanatic</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-about">
+          <h3>BOOKS FOR THE CURIOUS MIND</h3>
+          <p>
+            Step into a world of imagination, discovery, and timeless stories. Whether you're a fantasy fanatic or a
+            lover of classic literature, our curated collection is crafted for readers who crave more.
+          </p>
+        </div>
+    
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Address: 42 Book Street, New York, NY 10001</p>
+          <p>Email: hello@bookhaven.com</p>
+          <p>Phone: +1 (800) 123-BOOK</p>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 Book Haven. All Rights Reserved.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- Store Section -->
+  <main id="main-content" style="display: none;">
+    <div id="genre-tabs">
+      <button class="genre-btn" data-genre="All">All</button>
+      <button class="genre-btn" data-genre="Fiction">Fiction</button>
+      <button class="genre-btn" data-genre="Science Fiction">Science Fiction</button>
+      <button class="genre-btn" data-genre="Fantasy">Fantasy</button>
+      <button class="genre-btn" data-genre="Adventure">Adventure</button>
+      <button class="genre-btn" data-genre="Dystopian">Dystopian</button>
+      <button class="genre-btn" data-genre="Bestsellers">Bestsellers</button>
+    </div>
+    <center>
+      <input id="search-bar" type="text" placeholder="Search books...">
+    </center>
+    <div id="book-container"></div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="book-data.js"></script>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist - Book Haven</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="wishlist.css" />
+  </head>
+  <body>
+    <div class="head-container">
+      <p class="logo">bookhaven</p>
+      <div class="details-container">
+        <a href="./index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+      </div>
+      <div class="icon-container">
+        <a href="./wishlist.html"><i class="ri-heart-line"></i></a>
+        <a href="./cart.html"><i class="ri-shopping-bag-line"></i></a>
+      </div>
+    </div>
+
+    <h2>My Wishlist</h2>
+    <div id="container" class="wishlist-container"></div>
+
+    <script>
+      const wishlistContainer = document.getElementById("container");
+      let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+      function displayWishlist() {
+        wishlistContainer.innerHTML = "";
+
+        if (wishlist.length === 0) {
+          wishlistContainer.innerHTML = "<p>Your wishlist is empty.</p>";
+          return;
+        }
+
+        wishlist.forEach((book) => {
+          const div = document.createElement("div");
+          div.className = "wishlist-card";
+
+          div.innerHTML = `
+            <img src="${book.cover_image}" alt="${book.title}" class="wishlist-img" />
+            <div class="wishlist-info">
+              <h3>${book.title}</h3>
+              <p><strong>Author:</strong> ${book.author}</p>
+              <p><strong>Price:</strong> $${book.price.toFixed(2)}</p>
+              <button onclick="removeFromWishlist(${book.id})">Remove</button>
+            </div>
+          `;
+
+          wishlistContainer.appendChild(div);
+        });
+      }
+
+      function removeFromWishlist(id) {
+        // Remove item from the array and update localStorage
+        wishlist = wishlist.filter((book) => book.id !== id);
+        localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+        // Immediately re-render the updated wishlist
+        displayWishlist();
+      }
+
+      displayWishlist();
+    </script>
+  </body>
+</html>
